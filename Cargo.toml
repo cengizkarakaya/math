@@ -1,0 +1,58 @@
+[package]
+name = "math"
+version = "0.1.0"
+default-run = "main"
+edition = "2024"
+rust-version = "1.93"
+authors = ["Cengiz <cengizkarakaya@hotmail.com>"]
+description = "Mathematical utilities and benchmarks"
+publish = false
+
+
+[workspace]
+members = ["lib"]
+
+[dependencies]
+lib = { path = "lib" }
+num_cpus = "1.17.0"
+rayon = "1.11.0"
+# Daha düzgün zaman ölçümü
+humantime = "2.1"
+# Opsiyonel: sadece x86/x86_64 için CPUID ile ekstra ayrıntı
+raw-cpuid = { version = "11", optional = true }
+sysinfo = "0.38"
+wgpu = "28.0.0"
+pollster = "0.4"
+plotters = "0.3.7"
+plotly = "0.14.0"
+anyhow = "1.0.100"
+serde_json = "1.0.149"
+num = "0.4.3"
+
+[features]
+cpuid = ["raw-cpuid"]
+# x86’da ekstra CPU ayrıntısı istersen: --features cpuid
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "aritmetik"
+path = "bin/aritmetik.rs"
+
+[[bin]]
+name = "type_id"
+path = "bin/type_id.rs"
+
+[[bin]]
+name = "graph"
+path = "bin/graph.rs"
+
+[[bin]]
+name = "sinus"
+path = "bin/sinus.rs"
+
+[[bin]]
+name = "deneme"
+path = "bin/deneme.rs"

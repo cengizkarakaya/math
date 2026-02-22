@@ -1,0 +1,44 @@
+# Rust build outputs
+/target/
+
+# Cargo.lock
+# Binary projelerde commit edilir, library ise genelde edilmez.
+# Workspace kullanıyorsan genelde commit edilir.
+# İstemiyorsan yorumdan çıkar:
+/Cargo.lock
+
+# Rustfmt backup files
+**/*.rs.bk
+
+# IDE / Editor dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS dosyaları
+.DS_Store
+Thumbs.db
+
+# Log ve geçici dosyalar
+*.log
+*.tmp
+
+# Environment dosyaları
+.env
+.env.*
+
+# Test / coverage çıktıları
+/coverage/
+*.profraw
+*.profdata
+
+# Binary çıktılar
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Local configler
+config.local.toml

@@ -1,0 +1,14 @@
+let _rst = "\x1b[0m";
+let _bold = "\x1b[1m";
+let _underline = "\x1b[4m";
+let _italic = "\x1b[3m";
+
+let _blue = "\x1b[0;34m";
+let _green = "\x1b[0;32m";
+let _yellow = "\x1b[0;33m";
+let _red = "\x1b[0;31m";
+let _purple = "\x1b[0;35m";
+let _cyan = "\x1b[0;36m";
+
+let _black = "\x1b[0;30m";
+let _white = "\x1b[0;37m";
