@@ -1,6 +1,5 @@
 use lib::{alt_cizgi, ust_cizgi};
 
-
 fn main() {
     ust_cizgi();
 
