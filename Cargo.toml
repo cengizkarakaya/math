@@ -53,9 +53,7 @@ path = "bin/graph.rs"
 name = "sinus"
 path = "bin/sinus.rs"
 
-[[bin]]
-name = "deneme"
-path = "bin/deneme.rs"
+
 
 [[bin]]
 name = "deneme3"
