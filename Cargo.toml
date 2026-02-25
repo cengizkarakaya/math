@@ -31,9 +31,6 @@ num = "0.4.3"
 ratatui = "0.30.0"
 crossterm = "0.29.0"
 rand = "0.10.0"
-anyhow = "1.0.100"
-serde_json = "1.0.149"
-num = "0.4.3"
 
 [features]
 cpuid = ["raw-cpuid"]
@@ -66,10 +63,10 @@ path = "bin/deneme.rs"
 [[bin]]
 name = "deneme2"
 path = "bin/deneme2.rs"
+
+[[bin]]
 name = "sinus"
 path = "bin/sinus.rs"
-
-
 
 [[bin]]
 name = "deneme3"
