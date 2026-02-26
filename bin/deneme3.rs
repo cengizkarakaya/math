@@ -9,7 +9,7 @@ fn main() {
 
     //#[derive(Debug)]
     struct Ucgen {
-        kenar: f64
+        kenar: f64,
     }
 
     impl UcgenAlan for Ucgen {
@@ -18,12 +18,14 @@ fn main() {
         }
     }
 
-    let x = Ucgen{kenar: 5.0};
+    let x = Ucgen { kenar: 5.0 };
 
     let sonuc = x.ucgen_alani();
 
-    println!("Eşkenar üçgen kenarı {:?} için:\nÜçgen alanı = {:.2}", x.kenar, sonuc);
-
+    println!(
+        "Eşkenar üçgen kenarı {:?} için:\nÜçgen alanı = {:.2}",
+        x.kenar, sonuc
+    );
 
     alt_cizgi();
 }
