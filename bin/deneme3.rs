@@ -7,7 +7,7 @@ fn main() {
         (3.0f64).sqrt() / 4.0 * x * x
     }
 
-    let sonuc = ucgen_alani(5.0);
+    let sonuc = ucgen_alani(5.0) + 4.0;
 
     println!("{:.3}", sonuc);
 
