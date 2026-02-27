@@ -1,15 +1,16 @@
 use lib::{alt_cizgi, ust_cizgi};
-
+use std::io::{self, Write};
 fn main() {
     ust_cizgi();
 
-    fn ucgen_alani(x: f64) -> f64 {
-        (3.0f64).sqrt() / 4.0 * x * x
-    }
+    println!("veri : ");
+    io::stdout().flush().unwrap();
 
-    let sonuc = ucgen_alani(5.0) + 4.0;
+    let mut input =String::new();
+    io::stdin().read_line(&mut input).unwrap();
 
-    println!("{:.3}", sonuc);
+    let input = input.trim();
+    println!("\ninput : {}", input);
 
     alt_cizgi();
 }
