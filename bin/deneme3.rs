@@ -9,7 +9,7 @@ fn main() {
 
     let sonuc = ucgen_alani(5.0);
 
-    println!("{:.3}", sonuc);
+    println!("  {:.3}", sonuc);
 
     alt_cizgi();
 }
