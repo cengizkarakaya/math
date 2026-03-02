@@ -12,6 +12,8 @@ fn main() {
     let input =input.trim();
     println!("{}", input);
 
+    let kar_say = input.chars().count();
+    println!("{}", kar_say);
 
 
     alt_cizgi();
