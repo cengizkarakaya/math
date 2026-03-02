@@ -1,15 +1,18 @@
 use lib::{alt_cizgi, ust_cizgi};
+use std::io::{self, Write};
 
 fn main() {
     ust_cizgi();
 
-    fn ucgen_alani(x: f64) -> f64 {
-        (3.0f64).sqrt() / 4.0 * x * x
-    }
+    println!("bir cümle girin:\n");
+    io::stdout().flush().unwrap();
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("girdi okunamadı!");
 
-    let sonuc = ucgen_alani(11.3);
+    let input =input.trim();
+    println!("{}", input);
 
-    println!("  {:.2}", sonuc);
+
 
     alt_cizgi();
 }
