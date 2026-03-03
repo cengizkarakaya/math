@@ -1,8 +1,6 @@
-use lib::{alt_cizgi, ust_cizgi};
 use std::io::{self, Write};
 
 fn main() {
-    ust_cizgi();
 
     println!("bir cümle girin:\n");
     io::stdout().flush().unwrap();
@@ -28,5 +26,4 @@ fn main() {
         None => println!("Kelime yok"),
     }
 
-    alt_cizgi();
 }
